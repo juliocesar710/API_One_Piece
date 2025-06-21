@@ -1,0 +1,29 @@
+{
+  "name": "api_one_piece",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliocesar710/API_One_Piece.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/juliocesar710/API_One_Piece/issues"
+  },
+  "homepage": "https://github.com/juliocesar710/API_One_Piece#readme",
+  "dependencies": {
+    "@prisma/client": "^6.10.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.10.1"
+  }
+}
