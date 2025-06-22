@@ -1,18 +1,30 @@
-version: '3.8'
 
 services:
   db:
     image: postgres:15
-    container_name: onepiece-db
     restart: always
+    container_name: postgres_opex
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: one_piece
     ports:
       - "5432:5432"
-    environment:
-      POSTGRES_USER: onepiece
-      POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: onepiecedb
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build: .
+    container_name: api_opex
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@db:5432/one_piece"
+    volumes:
+      - .:/app
+    command: sh -c "npx prisma migrate deploy && node src/server.js" #&& npx prisma db seed
 
 volumes:
-  pgdata:
+  postgres_data:

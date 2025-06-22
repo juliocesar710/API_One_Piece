@@ -1,4 +1,11 @@
-import { findAllCharacters, findCharacterById, createNewCharacter, updateCharacterById, deleteCharacterById } from "../services/character.service.js";
+import {
+  findAllCharacters,
+  findCharacterById,
+  createNewCharacter,
+  updateCharacterById,
+  deleteCharacterById,
+  findCharactersByName
+} from "../services/character.service.js";
 
 export async function getAllCharacters(req, res) {
   try {
@@ -37,7 +44,8 @@ export async function updateCharacter(req, res) {
 
   try {
     const updated = await updateCharacterById(id, data);
-    if (!updated) return res.status(404).json({ error: "Personagem não encontrado" });
+    if (!updated)
+      return res.status(404).json({ error: "Personagem não encontrado" });
     res.json(updated);
   } catch (error) {
     res.status(500).json({ error: "Erro ao atualizar personagem" });
@@ -52,5 +60,20 @@ export async function deleteCharacter(req, res) {
     res.json({ message: "Personagem removido com sucesso" });
   } catch (error) {
     res.status(500).json({ error: "Erro ao remover personagem" });
+  }
+}
+
+export async function searchCharacterByName(req, res) {
+  const name = req.query.name;
+
+  if (!name) {
+    return res.status(400).json({ error: "Nome não informado" });
+  }
+
+  try {
+    const results = await findCharactersByName(name);
+    res.json(results);
+  } catch (error) {
+    res.status(500).json({ error: "Erro na busca por nome" });
   }
 }

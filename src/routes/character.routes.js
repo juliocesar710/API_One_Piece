@@ -5,12 +5,15 @@ import {
   createCharacter,
   updateCharacter,
   deleteCharacter,
+  searchCharacterByName
 } from "../controllers/character.controller.js";
 
 const router = Router();
 
 router.get("/", getAllCharacters);
+router.get("/search", searchCharacterByName);
 router.get("/:id", getCharacterById);
+
 
 router.post("/", createCharacter);
 
