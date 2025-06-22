@@ -11,3 +11,14 @@ export async function findCharacterById(id) {
 export async function createNewCharacter(data) {
   return await prisma.character.create({ data });
 }
+
+export async function updateCharacterById(id, data) {
+  return await prisma.character.update({
+    where: { id },
+    data,
+  });
+}
+
+export async function deleteCharacterById(id) {
+  return await prisma.character.delete({ where: { id } });
+}
