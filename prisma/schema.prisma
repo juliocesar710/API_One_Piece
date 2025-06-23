@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
 }
 
 datasource db {
@@ -19,4 +18,9 @@ model Character {
   name      String
   bounty    Int?
   crew      String?
+  imageUrl  String?   // URL da imagem do personagem
+  origin    String?   // Local de origem
+  fruit     String?   // Nome da fruta do diabo (se tiver)
+  role      String?   // Função no bando (ex: Capitão, Espadachim)
+  status    String?   // Vivo, Desaparecido, etc
 }
