@@ -19,8 +19,12 @@
     "url": "https://github.com/juliocesar710/API_One_Piece/issues"
   },
   "homepage": "https://github.com/juliocesar710/API_One_Piece#readme",
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
   "dependencies": {
     "@prisma/client": "^6.10.1",
+    "cors": "^2.8.5",
     "express": "^5.1.0"
   },
   "devDependencies": {

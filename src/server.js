@@ -1,28 +1,20 @@
 import express from "express";
-import prisma from "./prisma.js";
+import characterRoutes from "./routes/character.routes.js";
+import cors from "cors";
 
 const app = express();
-
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  })
+);
 app.use(express.json());
 
+app.use("/characters", characterRoutes);
+
 app.get("/", (req, res) => {
-  res.json({
-    message: "OnePiece API está viva!",
-  });
-}
-);
-
-app.get("characters", async (req, res) => {
-  try {
-    const characters = await prisma.character.findMany();
-    res.json(characters);
-  } catch (error) {
-    console.error("Erro ao buscar personagens:", error);
-    res.status(500).json({ error: "Erro ao buscar personagens" });
-  }
+  res.send("Hello World!");
 });
-
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
