@@ -1,8 +1,17 @@
 import prisma from "../prisma.js";
 
 export async function findAllCharacters() {
-  return await prisma.character.findMany();
+  return prisma.character.findMany({
+    select: {
+      id: true,
+      name: true,
+      imageUrl: true,
+      bounty: true,
+      crew: true,
+    },
+  });
 }
+
 
 export async function findCharacterById(id) {
   return await prisma.character.findUnique({ where: { id } });

@@ -2,51 +2,101 @@
   {
     "name": "Monkey D. Luffy",
     "bounty": 1500000000,
-    "crew": "Straw Hat Pirates"
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://tm.ibxk.com.br///2015/09/09/09165955100389.jpg?ims=1200x675",
+    "origin": "East Blue",
+    "fruit": "Gomu Gomu no Mi",
+    "role": "Capitão",
+    "status": "Vivo"
   },
   {
     "name": "Roronoa Zoro",
     "bounty": 320000000,
-    "crew": "Straw Hat Pirates"
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://i.pinimg.com/564x/6c/f8/bf/6cf8bfe2d5f8c3f3289c14b1157d3508.jpg",
+    "origin": "East Blue",
+    "fruit": null,
+    "role": "Espadachim",
+    "status": "Vivo"
   },
   {
     "name": "Nami",
     "bounty": 66000000,
-    "crew": "Straw Hat Pirates"
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://sm.ign.com/t/ign_br/screenshot/default/nami-one-piece_3sq6.1200.jpg",
+    "origin": "East Blue",
+    "fruit": null,
+    "role": "Navegadora",
+    "status": "Vivo"
   },
   {
     "name": "Usopp",
     "bounty": 200000000,
-    "crew": "Straw Hat Pirates"
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://pm1.aminoapps.com/6254/d663820431a7211ff0870e2fc960db7977cbb6e5_hq.jpg",
+    "origin": "East Blue",
+    "fruit": null,
+    "role": "Atirador",
+    "status": "Vivo"
   },
   {
     "name": "Sanji",
     "bounty": 330000000,
-    "crew": "Straw Hat Pirates"
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://www.geekproject.com.br/wp-content/uploads/2025/02/image-171.png",
+    "origin": "North Blue",
+    "fruit": null,
+    "role": "Cozinheiro",
+    "status": "Vivo"
   },
   {
     "name": "Tony Tony Chopper",
     "bounty": 100,
-    "crew": "Straw Hat Pirates"
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://recreio.com.br/wp-content/uploads/2024/09/chopper.jpg",
+    "origin": "Drum Island",
+    "fruit": "Hito Hito no Mi",
+    "role": "Médico",
+    "status": "Vivo"
   },
   {
     "name": "Nico Robin",
     "bounty": 130000000,
-    "crew": "Straw Hat Pirates"
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://criticalhits.com.br/wp-content/uploads/2025/01/fb825-17357395763345-1920-696x392.jpg",
+    "origin": "Ohara",
+    "fruit": "Hana Hana no Mi",
+    "role": "Arqueóloga",
+    "status": "Viva"
   },
   {
     "name": "Franky",
     "bounty": 94000000,
-    "crew": "Straw Hat Pirates"
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://seakoff.com/cdn/shop/articles/franky-from-one-piece-the-super-cyborg-of-the-straw-hat-pirates-321056.jpg?v=1718531214",
+    "origin": "South Blue",
+    "fruit": null,
+    "role": "Construtor Naval",
+    "status": "Vivo"
   },
   {
     "name": "Brook",
     "bounty": 83000000,
-    "crew": "Straw Hat Pirates"
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://i.pinimg.com/736x/59/d8/cc/59d8ccb398958fb814d2106bd8b8089f.jpg",
+    "origin": "West Blue",
+    "fruit": "Yomi Yomi no Mi",
+    "role": "Músico",
+    "status": "Vivo"
   },
   {
     "name": "Jinbe",
     "bounty": 438000000,
-    "crew": "Straw Hat Pirates"
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://comicbook.com/wp-content/uploads/sites/4/2024/08/658e0dec-66f3-4cd7-9d55-cf5e4eed0f17.jpg",
+    "origin": "Ilha dos Tritões",
+    "fruit": null,
+    "role": "Timoneiro",
+    "status": "Vivo"
   }
 ]
