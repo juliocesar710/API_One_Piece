@@ -27,6 +27,21 @@ export async function getCharacterById(req, res) {
   }
 }
 
+export async function searchCharacterByName(req, res) {
+  const name = req.query.name;
+
+  if (!name) {
+    return res.status(400).json({ error: "Nome não informado" });
+  }
+
+  try {
+    const results = await findCharactersByName(name);
+    res.json(results);
+  } catch (error) {
+    res.status(500).json({ error: "Erro na busca por nome" });
+  }
+}
+
 export async function createCharacter(req, res) {
   const { name, bounty, crew } = req.body;
   try {
@@ -63,17 +78,4 @@ export async function deleteCharacter(req, res) {
   }
 }
 
-export async function searchCharacterByName(req, res) {
-  const name = req.query.name;
 
-  if (!name) {
-    return res.status(400).json({ error: "Nome não informado" });
-  }
-
-  try {
-    const results = await findCharactersByName(name);
-    res.json(results);
-  } catch (error) {
-    res.status(500).json({ error: "Erro na busca por nome" });
-  }
-}
