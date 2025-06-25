@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Monkey D. Luffy",
+    "bounty": 1500000000,
+    "crew": "Straw Hat Pirates",
+    "imageUrl": "https://tm.ibxk.com.br///2015/09/09/09165955100389.jpg?ims=1200x675",
+    "origin": "East Blue",
+    "fruit": "Gomu Gomu no Mi",
+    "role": "Capitão",
+    "status": "Vivo"
+  },
+  {
+    "name": "Shanks",
+    "bounty": 4048900000,
+    "crew": "Red Hair Pirates",
+    "imageUrl": "https://www.einerd.com/wp-content/uploads/2025/01/shanks-one-piece.jpg",
+    "origin": "West Blue",
+    "fruit": null,
+    "role": "Capitão",
+    "status": "Vivo"
+  },
+  {
+    "name": "Alvida",
+    "bounty": 5000000,
+    "crew": "Alvida Pirates",
+    "imageUrl": "https://criticalhits.com.br/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2018/07/Alvida-one-piece-31434017-1280-720-740x416.jpg.webp",
+    "origin": "East Blue",
+    "fruit": "Sube Sube no Mi",
+    "role": "Capitã",
+    "status": "Viva"
+  },
+  {
+    "name": "Koby",
+    "bounty": 0,
+    "crew": "Marinha",
+    "imageUrl": "https://i.pinimg.com/736x/10/3d/1e/103d1e3660197c123bd10884af7fffcd.jpg",
+    "origin": "East Blue",
+    "fruit": null,
+    "role": "Cadete",
+    "status": "Vivo"
+  },
+  {
+    "name": "Yasopp",
+    "bounty": 0,
+    "crew": "Red Hair Pirates",
+    "imageUrl": "https://i.pinimg.com/736x/9c/a6/aa/9ca6aaaf547776ce9a798f0adbdf4f55.jpg",
+    "origin": "East Blue",
+    "fruit": null,
+    "role": "Atirador",
+    "status": "Vivo"
+  },
+  {
+    "name": "Lucky Roux",
+    "bounty": 0,
+    "crew": "Red Hair Pirates",
+    "imageUrl": "https://i.redd.it/who-wins-and-why-is-it-lucky-roux-v0-dviwsdkekjqd1.jpg?width=1290&format=pjpg&auto=webp&s=0985bb9dfe4541145b527fce1b352cf0092b4d92",
+    "origin": "Desconhecida",
+    "fruit": null,
+    "role": "Membro da tripulação",
+    "status": "Vivo"
+  },
+  {
+    "name": "Benn Beckman",
+    "bounty": 0,
+    "crew": "Red Hair Pirates",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0609/7122/1152/files/Benn-Beckman.jpg?v=1684541909",
+    "origin": "Desconhecida",
+    "fruit": null,
+    "role": "Imediato",
+    "status": "Vivo"
+  },
+  {
+    "name": "Makino",
+    "bounty": 0,
+    "crew": null,
+    "imageUrl": "https://anibase.net/files/45b401975ad57b7d1a9d5cb3b26a63f0",
+    "origin": "East Blue",
+    "fruit": null,
+    "role": "Dona de bar",
+    "status": "Viva"
+  },
+  {
+    "name": "Rei do Mar",
+    "bounty": 0,
+    "crew": null,
+    "imageUrl": "https://pm1.aminoapps.com/6392/c4602b54327a5312ac3dabf67a4ee601ac90d47a_hq.jpg",
+    "origin": "East Blue",
+    "fruit": null,
+    "role": "Criatura",
+    "status": "Vivo"
+  }
+]

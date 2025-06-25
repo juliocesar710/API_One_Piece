@@ -5,21 +5,30 @@ import path from "path";
 const prisma = new PrismaClient();
 
 async function main() {
-  const filePath = path.resolve("prisma", "characters.json");
-  const data = await fs.readFile(filePath, "utf-8");
-  const characters = JSON.parse(data);
+  const dataDir = path.resolve("prisma", "data");
+  const files = await fs.readdir(dataDir);
 
-  await prisma.character.createMany({
-    data: characters,
-    skipDuplicates: true, // ignora se já existir
-  });
+  for (const file of files) {
+    if (file.endsWith(".json")) {
+      const filePath = path.join(dataDir, file);
+      const data = await fs.readFile(filePath, "utf-8");
+      const characters = JSON.parse(data);
 
-  console.log("🌟 Banco populado com personagens iniciais!");
+      await prisma.character.createMany({
+        data: characters,
+        skipDuplicates: true,
+      });
+
+      console.log(`✅ Populado: ${file}`);
+    }
+  }
+
+  console.log("🌱 Todos os personagens foram adicionados ao banco!");
 }
 
 main()
   .catch((e) => {
-    console.error(e);
+    console.error("❌ Erro ao popular o banco:", e);
     process.exit(1);
   })
   .finally(() => {
