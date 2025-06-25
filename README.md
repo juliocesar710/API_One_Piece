@@ -144,19 +144,13 @@ services:
     command: sh -c "npx prisma migrate deploy && node src/server.js"
 
   frontend:
-    build: ./Opex  # ou o caminho do seu frontend
+    build: ./Opex
     container_name: frontend_opex
     ports:
-      - "5173:5173"  # Mapeia a porta do Vite (5173)
-    volumes:
-      - ./Opex:/app  # Monta o código fonte para hot-reload
-      - /app/node_modules  # Evita sobrescrever node_modules
-    environment:
-      - CHOKIDAR_USEPOLLING=true  # Habilita watch no Docker
+      - "5173:80"
     depends_on:
       - api
 
 volumes:
   postgres_data:
-
 ```
