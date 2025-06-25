@@ -16,7 +16,7 @@ datasource db {
 model Character {
   id        Int      @id @default(autoincrement())
   name      String
-  bounty    Int?
+   bounty   BigInt? 
   crew      String?
   imageUrl  String?   // URL da imagem do personagem
   origin    String?   // Local de origem
